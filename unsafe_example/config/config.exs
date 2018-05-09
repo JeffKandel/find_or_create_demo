@@ -5,8 +5,8 @@ use Mix.Config
 config :unsafe_example, UnsafeExample.Repo,
   adapter: Ecto.Adapters.Postgres,
   database: "unsafe_example_repo",
-  username: "user",
-  password: "pass",
+  username: "",
+  password: "",
   hostname: "localhost"
 
 config :unsafe_example, ecto_repos: [UnsafeExample.Repo]
