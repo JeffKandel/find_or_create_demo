@@ -8,6 +8,7 @@ defmodule UnsafeExample.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
+      UnsafeExample.Repo
       # Starts a worker by calling: UnsafeExample.Worker.start_link(arg)
       # {UnsafeExample.Worker, arg},
     ]
